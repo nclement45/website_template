@@ -1,16 +1,7 @@
-style.css 
-/THIS IS MY CSS TEMPLATE */ 
+
 /*
 This is a good layout for a mobile-first CSS template.
-Following this flow will minimize the number of styles you need to write and will ensure you are thinking, designing and developing mobile-first.
-Most of your styles get written like standard CSS, but for your mobile presentation. Generally speaking, a good mobile presention will stretch out nicely for larger screens.
 
-Sometimes, when we stretch out to larger screens, we need to make minor tweaks for the larger devices -- you can make these tweaks in the tablet media query, or if the issue exists on desktop only, the desktop media query.
-You will find this is far easier than the opposite task of using CSS to cram your desktop experience into a mobile device.
-*/
-/*********************************************************************
- LOADS IN A NICE RESET TO ENSURE ALL BROWSERS HAVE THE SAME BASE STYLES
-*********************************************************************/
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css');
 
 /*********************************************************************
@@ -18,29 +9,62 @@ You will find this is far easier than the opposite task of using CSS to cram you
 *********************************************************************/
 * {
     box-sizing: border-box;
+    margin: 10px;
+ 
 }
 /*
-This the font style edits .
-*/	
+These are my edits for font, color and size of the wesbsite. 
+*/  
 html, body {
     /* Sets default font-size to 16px, ensuring 1em = 16px; */
     font-size: 16px;
+    font-family: Lexend, serif;
 }
 .text{
-margin: auto;
-margin-top: 20px;
+margin: 10px;
+background-color: white;
 padding:20px;
 max-width:600px;
 
 }
-.header {text-align: center;}
+
 body{
-	figcaption{color:black;
+    background-color: navy blue;
 }
-figure {
-	max-width: 600px;
+
+header {
+    text-align: center;
+
 }
-img{max-width: 100%}
+
+figure { margin: auto;
+    padding: 20px;
+    max-width: 600px;
+}
+
+figcaption {
+    color: gray;
+    margin-bottom: 10px;
+}
+
+img{
+    max-width: 100%;
+    margin: auto;
+    display: block;
+}
+
+.overview, .healthcare, .climate-change, .data-centers, .veterans{
+    margin-top: 20px;
+    margin-bottom: -20px;
+    padding: 10px;
+}
+
+.overview h2, .healthcare h2, .climate-change h2, .data-centers h2, .veterans h2 {
+    text-align: center;
+    color: lightblue;
+
+}
+
 
 
 /*********************************************************************
@@ -51,6 +75,9 @@ img{max-width: 100%}
     Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
 }
 
+.text{
+        margin: auto;
+    }
 /*********************************************************************
   YOUR DESKTOP-ONLY STYLES GO HERE
 *********************************************************************/
